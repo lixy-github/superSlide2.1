@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多图滚动</title>
+    <link rel="stylesheet" href="css/picScroll-left.css">
+    <script src="js/jquery1.42.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+    <div class="picScroll-left">
+        <div class="hd">
+            <a class="next">></a>
+            <!-- <ul></ul> -->
+            <a class="prev"><</a>
+            <!-- <span class="pageState"></span> -->
+        </div>
+        <div class="bd">
+            <ul class="picList">
+                <li>
+                    <div class="pic">
+                        <a target="_blank"><img src="images/pic1.jpg" /></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a target="_blank"><img src="images/pic2.jpg" /></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a target="_blank"><img src="images/pic3.jpg" /></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a target="_blank"><img src="images/pic4.jpg" /></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a target="_blank"><img src="images/pic5.jpg" /></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a target="_blank"><img src="images/pic6.jpg" /></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a target="_blank"><img src="images/pic7.jpg" /></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        jQuery(".picScroll-left").slide({
+            titCell: ".hd ul",
+            mainCell: ".bd ul",
+            autoPage: true,
+            effect: "leftLoop",
+            autoPlay: false,
+            vis: 5,
+            trigger: "click"
+        })
+    </script>
+</body>
+
+</html>

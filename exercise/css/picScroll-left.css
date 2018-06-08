@@ -1,0 +1,132 @@
+/* css 重置 */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #fff;
+    font: normal 12px/22px 宋体;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* 本例子css */
+
+.picScroll-left {
+    width: 870px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.picScroll-left .hd {
+    /* overflow: hidden;
+    height: 30px;
+    padding: 0 10px; */
+    position: absolute;
+    z-index: 1;
+    width:100%;
+    height: 32px;
+    line-height: 32px;
+    top: 50%;
+    margin-top: -16px;
+}
+
+.picScroll-left .hd .prev,
+.picScroll-left .hd .next {
+    display: block;
+    /* width: 5px;
+    height: 9px; */
+    /* float: right; */
+    /* margin-right: 5px; */
+    /* margin-top: 10px; */
+    color: #159eee;
+    cursor: pointer;
+    /* overflow: hidden; */
+    /* background: url("../images/arrow.png") no-repeat; */
+    font-size:20px;
+    float:left;
+}
+
+.picScroll-left .hd .next {
+    /* background-position: 0 -50px; */
+    float:right;
+}
+
+.picScroll-left .hd .prevStop {
+    background-position: -60px 0;
+}
+
+.picScroll-left .hd .nextStop {
+    background-position: -60px -50px;
+}
+
+.picScroll-left .hd ul {
+    float: right;
+    overflow: hidden;
+    zoom: 1;
+    margin-top: 10px;
+    zoom: 1;
+}
+
+.picScroll-left .hd ul li {
+    float: left;
+    width: 9px;
+    height: 9px;
+    overflow: hidden;
+    margin-right: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background: url("../images/icoCircle.gif") 0 -9px no-repeat;
+}
+
+.picScroll-left .hd ul li.on {
+    background-position: 0 0;
+}
+
+.picScroll-left .bd {
+    padding: 10px;
+}
+
+.picScroll-left .bd ul {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.picScroll-left .bd ul li {
+    margin: 0 8px;
+    float: left;
+    _display: inline;
+    overflow: hidden;
+    text-align: center;
+}
+
+.picScroll-left .bd ul li .pic {
+    text-align: center;
+}
+
+.picScroll-left .bd ul li .pic img {
+    width: 150px;
+    height: 100px;
+    display: block;
+    padding: 2px;
+}
+
+.picScroll-left .bd ul li .pic a:hover img {
+    border-color: #999;
+}
+
+.picScroll-left .bd ul li .title {
+    line-height: 24px;
+}
